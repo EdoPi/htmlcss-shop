@@ -24,10 +24,21 @@ text-align: center;
   height: 100%;
   display: inline-block;
   background-color: #eee;
+  position:relative;
   /*   border-left: 1px solid white; - bordo di aiuto usato per il layout */
 
 }
 
 .row:nth-child(2){
   margin-top: 25px;
+}
+
+.sconto {
+  background-color: green;
+  position: absolute;
+  right:1px;
+}
+
+.row .image-container:nth-child(2) span{
+  background-color: red;
 }
