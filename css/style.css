@@ -8,21 +8,26 @@
 .container{
   margin: 0 auto;
   width: 1000px;
-  background-color: #ccc;
+  background-color: #fff;
   position: relative;
 }
 
 .row{
 width: 1000px;
-height: 300px;
-background-color:#000;
-border-bottom: 1px solid red;
+/* background-color:#000; - sfondo di aiuto usato per il layout*/
+/* border-bottom: 1px solid red; - bordo di aiuto usato per il layout*/
+text-align: center;
 
 }
 .image-container{
   width: 33%;
   height: 100%;
   display: inline-block;
-  border-left: 1px solid white;
+  background-color: #eee;
+  /*   border-left: 1px solid white; - bordo di aiuto usato per il layout */
 
+}
+
+.row:nth-child(2){
+  margin-top: 25px;
 }
