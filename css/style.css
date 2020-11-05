@@ -13,15 +13,17 @@
 }
 
 .row{
-width: 1000px;
+/* width: 1000px;*/
+
 /* background-color:#000; - sfondo di aiuto usato per il layout*/
 /* border-bottom: 1px solid red; - bordo di aiuto usato per il layout*/
 text-align: center;
 
+
 }
 .image-container{
   width: 33%;
-  height: 100%;
+  /*   height: 100%;  */
   display: inline-block;
   background-color: #eee;
   position:relative;
@@ -36,9 +38,26 @@ text-align: center;
 .sconto {
   background-color: green;
   position: absolute;
-  right:1px;
+  right:0px;
 }
 
-.row .image-container:nth-child(2) span{
+.row .image-container:nth-child(2) .sconto{
   background-color: red;
+}
+
+.cuore-container{
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+  background-color: #eee
+}
+
+.cuore{
+  background-color: #eee;
+  color: red;
+  display: none;
+}
+
+.image-container:hover .cuore {
+  display: block;
 }
