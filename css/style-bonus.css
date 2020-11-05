@@ -2,5 +2,88 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff;
+  /*   background-color: #fff;  */
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  width: 1000px;
+  height: 100px;
+  position:fixed;
+  top: 0px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background-color: #282C34;
+  color: white;
+  border-bottom: 4px solid white;
+  z-index: 1000;
+}
+
+h1{
+  display:inline-block;
+  padding-left: 20px;
+  z-index: 1001px;
+}
+
+a{
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.container {
+  margin:0 auto;
+  width: 1000px;
+  position: relative;
+  background-color: white;
+}
+
+.row{
+text-align: center;
+}
+
+
+.image-container{
+  width: 33%;
+  display: inline-block;
+  background-color: #eee;
+  position:relative;
+  top:75px;
+}
+
+.container .row:nth-child(3){
+  margin-top: 15px;
+}
+
+.sconto {
+  background-color: green;
+  position: absolute;
+  right:0px;
+}
+
+.row .image-container:nth-child(2) .sconto{
+  background-color: red;
+}
+
+.cuore-container{
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+  background-color: #eee
+}
+
+.cuore{
+  background-color: #eee;
+  color: red;
+  display: none;
+}
+
+.image-container:hover .cuore {
+  display: block;
 }
